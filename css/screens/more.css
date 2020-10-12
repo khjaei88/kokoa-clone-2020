@@ -1,0 +1,43 @@
+.more-screen {
+  margin-top: -20px;
+}
+
+.more-screen .icon-row {
+  margin-top: 35px;
+}
+
+.more-pay {
+  padding: 10px 12px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.more-pay__column {
+  display: flex;
+  justify-content: center;
+}
+
+.more-pay__column-pay {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.more-pay__column-pay span:first-child {
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+.more-pay__column .divider {
+  width: 2px;
+  height: 15px;
+  margin: 0px 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
