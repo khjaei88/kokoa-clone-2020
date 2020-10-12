@@ -40,7 +40,7 @@
 .user-component__subtitle {
   margin-top: 8px;
   font-size: 16px;
-  color: var(--gray);
+  color: var(--color-gray);
 }
 .user-component__subtitle .fa-exclamation-circle {
   color: rgba(255, 0, 0, 0.5);
