@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chats - Kokoa Talk</title>
   </head>
+
   <body>
     <div class="status-bar">
       <div class="status-bar__column">
@@ -36,9 +37,10 @@
     </header>
 
     <main class="main-screen">
-      <a href="http://program.tving.com/tvn/startup" target="blank"
-        ><img class="banner" src="images/banner01.png" />
+      <a href="http://program.tving.com/tvn/startup" target="blank">
+        <img class="banner" src="images/banner01.png" />
       </a>
+      <!-- 채팅방1-도산이 -->
       <a href="chat.html">
         <div class="user-component">
           <div class="user-component__column">
@@ -57,30 +59,33 @@
           </div>
         </div>
       </a>
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            class="user-component__avatar user-component__avatar"
-            src="http://img.lifestyler.co.kr/uploads/program/2/2197/menu/4/html/f132463556383038171(0).png"
-          />
-          <div class="user-component__text">
-            <h4 class="user-component__title">사랑하는 할머니</h4>
-            <h6 class="user-component__subtitle">밥은 먹어ㅆ어 .?</h6>
+      <!-- 채팅방2-할머니 -->
+      <a href="chat-grandma.html">
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              class="user-component__avatar user-component__avatar"
+              src="http://img.lifestyler.co.kr/uploads/program/2/2197/menu/4/html/f132463556383038171(0).png"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title">사랑하는 할머니</h4>
+              <h6 class="user-component__subtitle">밥은 먹어ㅆ어 .?</h6>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <span class="user-component__time">19:21</span>
+            <div class="notification__badge">2</div>
           </div>
         </div>
-        <div class="user-component__column">
-          <span class="user-component__time">19:21</span>
-          <div class="notification__badge">2</div>
-        </div>
-      </div>
+      </a>      
     </main>
 
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__btn">
-          <a class="nav__link" href="friends.html"
-            ><i class="far fa-user fa-2x"></i
-          ></a>
+          <a class="nav__link" href="friends.html">
+            <i class="far fa-user fa-2x"></i>
+          </a>
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="chats.html">
@@ -89,27 +94,25 @@
           </a>
         </li>
         <li class="nav__btn">
-          <a class="nav__link" href="find.html"
-            ><i class="fas fa-search fa-2x"></i
-          ></a>
+          <a class="nav__link" href="find.html">
+            <i class="fas fa-search fa-2x"></i>
+          </a>
         </li>
         <li class="nav__btn">
-          <a class="nav__link" href="more.html"
-            ><span class="notification__badge-dot"></span
-            ><i class="fas fa-ellipsis-h fa-2x"></i
-          ></a>
+          <a class="nav__link" href="more.html">
+            <span class="notification__badge-dot"></span>
+            <i class="fas fa-ellipsis-h fa-2x"></i>
+          </a>
         </li>
       </ul>
     </nav>
 
     <div id="no-mobile">
-      <span>Your screens is too big :(</span>
+      <i class="fas fa-skull-crossbones"></i>
+      <span>Your screens is too big</span>
+      <i class="fas fa-skull-crossbones"></i>
     </div>
 
-    <!-- 스크립트는 항상 바디 태그를 닫기 직전에 위치해야한다. -->
-    <script
-      src="https://kit.fontawesome.com/6478f529f2.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
   </body>
 </html>

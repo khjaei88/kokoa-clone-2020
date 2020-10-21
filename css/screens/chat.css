@@ -47,7 +47,6 @@
 .message-row {
   width: 100%;
   display: flex;
-  margin-bottom: 25px;
   animation: FadeInMessage 0.5s linear;
 }
 
@@ -67,6 +66,7 @@
   background-color: white;
   padding: 13px;
   font-size: 18px;
+  line-height: 24px;
   border-radius: 15px;
   border-top-left-radius: 0px;
   margin-right: 5px;
@@ -75,6 +75,7 @@
 .message__info {
   display: flex;
   align-items: flex-end;
+  margin-bottom: 20px;
 }
 
 .message__author,

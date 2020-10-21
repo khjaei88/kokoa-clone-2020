@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Find - Kokoa Talk</title>
   </head>
+
   <body>
     <div class="status-bar">
       <div class="status-bar__column">
@@ -53,6 +54,8 @@
           <span>초대</span>
         </div>
       </div>
+
+      <!-- 친구 추천 -->
       <div class="recommended-friends">
         <h6 class="recommended-friends__title">친구 추천</h6>
         <span>추천 친구가 없습니다.</span>
@@ -65,14 +68,14 @@
             <i class="fas fa-chevron-right fa-xs"></i>
           </a href="#">
         </div>
+
+        <!-- 오픈 포스트 -->
         <div class="open-post">
           <div class="open-post__column">
             <h5 class="open-post__title">#달미의 창업 일기</h5>
             <h6 class="open-post__hashtags">#서달미#창업#스타트업</h6>
             <div class="open-post__members">
-              <img
-                src="https://img.wowtv.co.kr/thumb/IMG06/20201008/HK/20201008140033_5f7e9cf1cc585_1.jpg"
-              />
+              <img src="https://img.wowtv.co.kr/thumb/IMG06/20201008/HK/20201008140033_5f7e9cf1cc585_1.jpg"/>
               <span class="open-post__member-count">802 members</span>
               <div class="divider"></div>
               <span class="open-post__member-status">Active</span>
@@ -80,9 +83,7 @@
           </div>
           <div class="open-post__column">
             <div class="open-post__photo">
-              <img
-                src="images/thumbnail01.png"
-              />
+              <img src="images/thumbnail01.png"/>
               <div class="open-post__heart-count">
                 <i class="fas fa-heart fa-xs"></i>
                 <span>326</span>
@@ -95,9 +96,7 @@
             <h5 class="open-post__title">#(주)삼산텍 창업 일기</h5>
             <h6 class="open-post__hashtags">#삼산텍#삼산이들#올림피아드최연소금상수상#창업#스타트업</h6>
             <div class="open-post__members">
-              <img
-                src="https://pbs.twimg.com/media/Ej5XgG3UYAA_ZCx?format=jpg&name=4096x4096"
-              />
+              <img src="https://pbs.twimg.com/media/Ej5XgG3UYAA_ZCx?format=jpg&name=4096x4096"/>
               <span class="open-post__member-count">2023 members</span>
               <div class="divider"></div>
               <span class="open-post__member-status">Active</span>
@@ -105,9 +104,7 @@
           </div>
           <div class="open-post__column">
             <div class="open-post__photo">
-              <img
-                src="images/thumbnail02.png"
-              />
+              <img src="images/thumbnail02.png"/>
               <div class="open-post__heart-count">
                 <i class="fas fa-heart fa-xs"></i>
                 <span>1026</span>
@@ -115,16 +112,15 @@
             </div>
           </div>
         </div>
-
       </div>
     </main>
 
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__btn">
-          <a class="nav__link" href="friends.html"
-            ><i class="far fa-user fa-2x"></i
-          ></a>
+          <a class="nav__link" href="friends.html">
+            <i class="far fa-user fa-2x"></i>
+          </a>
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="chats.html">
@@ -133,23 +129,25 @@
           </a>
         </li>
         <li class="nav__btn">
-          <a class="nav__link" href="find.html"
-            ><i class="fas fa-search fa-2x"></i
-          ></a>
+          <a class="nav__link" href="find.html">
+            <i class="fas fa-search fa-2x"></i>
+          </a>
         </li>
         <li class="nav__btn">
-          <a class="nav__link" href="more.html"
-            ><span class="notification__badge-dot"></span
-            ><i class="fas fa-ellipsis-h fa-2x"></i
-          ></a>
+          <a class="nav__link" href="more.html">
+            <span class="notification__badge-dot"></span>
+            <i class="fas fa-ellipsis-h fa-2x"></i>
+          </a>
         </li>
       </ul>
     </nav>
 
-    <!-- 스크립트는 항상 바디 태그를 닫기 직전에 위치해야한다. -->
-    <script
-      src="https://kit.fontawesome.com/6478f529f2.js"
-      crossorigin="anonymous"
-    ></script>
+    <div id="no-mobile">
+      <i class="fas fa-skull-crossbones"></i>
+      <span>Your screens is too big</span>
+      <i class="fas fa-skull-crossbones"></i>
+    </div>
+
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
   </body>
 </html>

@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Friends - Kokoa Talk</title>
   </head>
-  <body>
+
+  <body id="friends-screen">
     <div class="status-bar">
       <div class="status-bar__column">
         <i class="fas fa-signal fa-sm"></i>
@@ -41,29 +42,30 @@
     </a>
 
     <main class="friends-screen">
-      <div class="user-component">
-        <a
-          href="http://program.tving.com/tvn/startup/4/Contents/Html?h_seq=1"
-          target="blank"
-          class="user-component__column"
-        >
-          <img
+      <a href="http://program.tving.com/tvn/startup/4/Contents/Html?h_seq=1"
+      target="blank">
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
             class="user-component__avatar user-component__avatar--xl"
             src="images/profile_dalmi.png"
-          />
-          <div class="user-component__text">
-            <h4 class="user-component__title">서달미</h4>
-            <h6 class="user-component__subtitle">역전을 위해!</h6>
+            />          
+            <div class="user-component__text">
+              <h4 class="user-component__title">서달미</h4>
+              <h6 class="user-component__subtitle">역전을 위해서!</h6>
+            </div>
           </div>
-        </a>
-        <div class="user-component__column"></div>
-      </div>
+          <div class="user-component__column"></div>
+        </div>
+      </a>
+      
 
       <div class="friends-screen__contents">
         <div class="friends-screen__content-header">
           <span>즐겨찾기</span>
           <i class="fas fa-chevron-up fa-xs"></i>
         </div>
+        <!-- 할머니 -->
         <div class="user-component">
           <div class="user-component__column">
             <img
@@ -71,32 +73,28 @@
               src="http://img.lifestyler.co.kr/uploads/program/2/2197/menu/4/html/f132463556383038171(0).png"
             />
             <div class="user-component__text">
-              <h4 class="user-component__title user-component__title--not-bold">
-                사랑하는 할머니
-              </h4>
+              <h4 class="user-component__title user-component__title--not-bold">사랑하는 할머니</h4>
             </div>
           </div>
           <div class="user-component__column"></div>
         </div>
-        <div class="user-component">
-          <a
-            href="http://program.tving.com/tvn/startup/4/Contents/Html?h_seq=2"
-            target="blank"
-            class="user-component__column"
-          >
-            <img
-              class="user-component__avatar user-component__avatar--sm"
-              src="images/profile_dosan.png"
-            />
-            <div class="user-component__text">
-              <h4 class="user-component__title user-component__title--not-bold">
-                도산이
-              </h4>
-              <h6 class="user-component__subtitle">다시 빛나기 위해</h6>
+        <!-- 남도산 -->
+        <a href="http://program.tving.com/tvn/startup/4/Contents/Html?h_seq=2"
+        target="blank">
+          <div class="user-component">
+            <div class="user-component__column">
+              <img
+                class="user-component__avatar user-component__avatar--sm"
+                src="images/profile_dosan.png"
+              />
+              <div class="user-component__text">
+                <h4 class="user-component__title user-component__title--not-bold">도산이</h4>
+                <h6 class="user-component__subtitle">다시 빛나기 위해</h6>
+              </div>
             </div>
-          </a>
-          <div class="user-component__column"></div>
-        </div>
+            <div class="user-component__column"></div>
+          </div>
+        </a>        
       </div>
 
       <div class="friends-screen__contents">
@@ -125,6 +123,49 @@
           </div>
         </div>
       </div>
+
+      <div class="friends-screen__contents">
+        <div class="friends-screen__content-header">
+          <span>친구</span>
+          <i class="fas fa-chevron-up fa-xs"></i>
+        </div>
+        <!-- 원인재 -->
+        <a href="http://program.tving.com/tvn/startup/4/Contents/Html?h_seq=4"
+        target="blank">
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              class="user-component__avatar user-component__avatar--sm"
+              src="images/profile_injae.png"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">원인재</h4>
+              <h6 class="user-component__subtitle">개가 되기 싫어서</h6>
+            </div>
+          </div>
+          <div class="user-component__column"></div>
+        </div>  
+        </a>              
+        <!-- 한지평 -->
+        <a href="http://program.tving.com/tvn/startup/4/Contents/Html?h_seq=3"
+        target="blank">
+        <div class="user-component" >
+          <div class="user-component__column">
+            <img
+              class="user-component__avatar user-component__avatar--sm"
+              src="images/profile_ji.png"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">한지평</h4>
+              <h6 class="user-component__subtitle">빚을 갚기 위해</h6>
+            </div>
+          </div>
+          <div class="user-component__column"></div>
+        </div>    
+        </a>
+          
+      </div>
+
     </main>
 
     <nav class="nav">
@@ -163,13 +204,11 @@
     </div>
 
     <div id="no-mobile">
-      <span>Your screens is too big :(</span>
+      <i class="fas fa-skull-crossbones"></i>
+      <span>Your screens is too big</span>
+      <i class="fas fa-skull-crossbones"></i>
     </div>
 
-    <!-- 스크립트는 항상 바디 태그를 닫기 직전에 위치해야한다. -->
-    <script
-      src="https://kit.fontawesome.com/6478f529f2.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
   </body>
 </html>

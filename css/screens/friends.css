@@ -1,3 +1,7 @@
+#friends-screen .user-component {
+  margin: 10px 0px;
+}
+
 #friends-display-link {
   text-align: center;
   display: block;
@@ -56,7 +60,7 @@
   animation-delay: 1s;
 }
 
-@keyframes SlashTitleMoving {
+/* @keyframes SlashTitleMoving {
   0% {
     transform: scale(2);
     opacity: 0.5;
@@ -68,6 +72,17 @@
   100% {
     transform: none;
   }
+} */
+
+@keyframes SlashTitleMoving {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(3);
+    opacity: 0;
+  }
 }
 
 #splash-screen .splash__title {
@@ -76,6 +91,7 @@
   align-items: center;
   position: relative;
   animation: SlashTitleMoving 0.5s ease-in-out;
+  animation-delay: 1s;
 }
 
 #splash-screen .splash__title span {
