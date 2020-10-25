@@ -3,7 +3,7 @@
   bottom: 0;
   width: 100%;
   padding: 16px 30px;
-  font-size: 14px;
+  font-size: 30px;
   box-sizing: border-box;
   background-color: var(--color-main);
 }
@@ -14,10 +14,6 @@
 .nav__link {
   position: relative;
   color: var(--color-sub);
-}
-
-.nav__link:hover {
-  color: whitesmoke;
 }
 
 @keyframes notificationAnimation {
